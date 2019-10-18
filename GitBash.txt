@@ -63,3 +63,4 @@ https://github.com/ginaliji/planets.git
 git remote add origin https://github.com/ginaliji/planets.git  
 git remote -v
 git push origin master 
+git add sandip
