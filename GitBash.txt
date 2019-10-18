@@ -1,0 +1,65 @@
+Dash Shell
+
+pwd # print working directory
+ls # list 
+ls --help # get help
+ls -lh # list files in human readable note
+clear # clear page
+cd # calling home directory-take me home
+cd something # calling some directory
+cd .. # calling parent directory
+cd ~ # calling home directory
+cd # calling home ddirectory
+ls --help # get help
+mkdir thesis # making/creat a directory "thesis"
+mkdir "my work" # creat a directory "my work"
+touch my_file.txt # creat a file "my_file.txt" 
+mv # move
+mv thesis/draft.txt thesis/quote.txt # change file name
+mv thesis/draft.txt quote.txt # move the file to the existing working directory and change the file name
+mv thesis/my_work.docx .  # move "my_work.docx" file to the existing working directory
+cp # copy
+cp -r thesis thesis_backup # copy recursive, copy the entire folder to another folder
+cp -a # copy all folder and update
+rm -i my_file.txt # remove the file
+ls *.pdb # list all files in pdb formate
+ls *p*.pdb # show me files that 0 or more letters before and after p and in pdb formate
+ls p?.pdb # list files start with p and with one letter after p in pdb formate
+wc # word count in line, words, and characters
+control c #control clear/get out
+wc -l *.pdb > lengths.txt # count #lengths in all pdb files, and write into lengths.txt file
+cat lengths.txt # show the contect in the lengths.txt file
+git init # set master
+git config --global user.email "
+nano mars.txt
+cat mars.txt
+git diff mars.txt
+git add 
+git status
+git commit -m "add a message to this commit"
+git commit -m "start notes on mars as base" # commit it every time you make some change
+git log
+git diff
+git diff --staged
+git log mars.txt
+
+git diff mars.txt
+git diff HEAD mars.text # same result as previous command
+git diff HEAD~1 mars.txt # you ask 1 step in previous, that version. you could change the number.
+git diff 5f07 mars.txt  # same result as HEAD~ command, but you use first 4 letters/numbers of the commit numbers here.
+
+git checkout HEAD mars.txt # you checkout the last change in the txt file. You remove the last change.
+cat mars.txt # you can see that you lost the last change in your txt file
+
+nano .gitignore 
+cat .gitignore
+git status
+ls -a
+git commit -m "ignore the data files and results folder"
+git status
+git status --ignored
+
+https://github.com/ginaliji/planets.git
+git remote add origin https://github.com/ginaliji/planets.git  
+git remote -v
+git push origin master 
